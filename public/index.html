@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+	<script defer src='/build/bundle.js'></script>
+
+</head>
+
+<script>
+	// Connect to Gun server on localhost
+	/*const gun = Gun('http://localhost:8765/gun');
+	if (gun) {
+			// Store data
+		gun.get('message').put({ text: 'gun connected' });
+
+		// Retrieve data
+		gun.get('message').on(data => {
+				console.log(data.text);
+				document.body.innerHTML += `<p>${data.text}</p>`;
+		});
+	}*/
+</script>
+
+<body>
+</body>
+</html>
